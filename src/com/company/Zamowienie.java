@@ -33,10 +33,7 @@ public class Zamowienie{
     }
 
     public boolean oplacZamowienie(Platnosc platnosc) {
-        if (platnosc.zaplac(this)) {
-            return true;
-        }
-        return false;
+        return platnosc.zaplac(this);
     }
 
     public void drukujPotwierdzenie() {
@@ -81,7 +78,7 @@ public class Zamowienie{
 
     public void printZamowienie() {
         System.out.printf("Zamowienie: %s\n", identyfikatorZamowienia);
-        System.out.println("");
+        System.out.println();
         System.out.printf("Opłacone: %s\n", (statusZamowienia?"TAK":"NIE"));
 
         System.out.printf("Pozycje zamówienia: \n");
@@ -123,10 +120,6 @@ public class Zamowienie{
                 inputedValue.equals("NIE")
         ));
 
-        if (inputedValue.equals("TAK")) {
-            potwierdzenieElektorniczne = true;
-        } else {
-            potwierdzenieElektorniczne = false;
-        }
+        potwierdzenieElektorniczne = inputedValue.equals("TAK");
     }
 }
