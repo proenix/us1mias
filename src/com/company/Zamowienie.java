@@ -77,7 +77,7 @@ public class Zamowienie{
     }
 
     public void printZamowienie() {
-        System.out.printf("Zamowienie: %s\n", identyfikatorZamowienia);
+        System.out.printf("Zamówienie: %s\n", identyfikatorZamowienia);
         System.out.println();
         System.out.printf("Opłacone: %s\n", (statusZamowienia?"TAK":"NIE"));
 
@@ -104,7 +104,7 @@ public class Zamowienie{
     }
 
     private void askIdentyfikatorZamowienia(Scanner s) {
-        System.out.println("Identyfikator zamowienia: ");
+        System.out.println("Identyfikator zamówienia: ");
         String inputedValue;
         do {
             inputedValue = s.nextLine();

@@ -27,7 +27,7 @@ public class Kredyt extends Platnosc {
         } while (!isByte(inputedValue));
         liczbaRat = Byte.parseByte(inputedValue);
 
-        System.out.println("Oprocentowanie Roczne: ");
+        System.out.println("Oprocentowanie roczne: ");
         do {
             inputedValue = s.nextLine();
         } while (!isFloat(inputedValue));

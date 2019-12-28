@@ -6,7 +6,7 @@ public class Gotowka extends Platnosc {
 
     @Override
     public boolean zaplac(Zamowienie zamowienie) {
-        System.out.println("Wybrano metodę płatności gotowka.");
+        System.out.println("Wybrano metodę płatności gotówka.");
 
         Scanner s = new Scanner(System.in);
         System.out.println("Kwota płatności: ");

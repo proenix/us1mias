@@ -21,7 +21,8 @@ public class Main {
     public static void mainMenu() {
         clearScreen();
         Scanner s = new Scanner(System.in);
-        System.out.println("Menu.");
+        System.out.println("by Piotr Trzepacz 2019");
+        System.out.println("---");
         System.out.printf("1. Lista Zamówień\n" +
                 "2. Dodaj Zamówienie\n" +
                 "3. Lista płatności\n");
@@ -82,7 +83,7 @@ public class Main {
         Scanner s = new Scanner(System.in);
         System.out.printf("Wybrano płatność dot. %s\n", platnosc.idZamowienia);
         System.out.printf("1. Wydruk potwierdzenia\n" +
-                "2. Wyjdz do menu\n");
+                "2. Wyjdź do menu\n");
         String inputtedValue;
         do {
             inputtedValue = s.nextLine();
@@ -113,7 +114,7 @@ public class Main {
     private static void addPozycjeZamowienia(Zamowienie zamowienie) {
         Scanner s = new Scanner(System.in);
         zamowienie.dodajPozycjeZamowienia();
-        System.out.println("Dodać pozycje zamowienia? [TAK/NIE]");
+        System.out.println("Dodać pozycje do zamówienia? [TAK/NIE]");
         String inputedValue;
         do {
             inputedValue = s.nextLine();
@@ -160,11 +161,11 @@ public class Main {
     private static void showZamowienie(Zamowienie zamowienie) {
         clearScreen();
         Scanner s = new Scanner(System.in);
-        System.out.printf("Wybrano zamowienie %s\n", zamowienie.getIdentyfikatorZamowienia());
-        System.out.printf("1. Pokaz szczegoly zamówienia\n" +
-                "2. Oplac zamówienie\n" +
+        System.out.printf("Wybrano zamówienie %s\n", zamowienie.getIdentyfikatorZamowienia());
+        System.out.printf("1. Pokaż szczegóły zamówienia\n" +
+                "2. Opłać zamówienie\n" +
                 "3. Wydrukuj potwierdzenie\n" +
-                "4. Wyjdz do menu\n");
+                "4. Wyjdź do menu\n");
         String inputtedValue;
         do {
             inputtedValue = s.nextLine();
